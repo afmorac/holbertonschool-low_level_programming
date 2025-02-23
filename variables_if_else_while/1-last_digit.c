@@ -4,6 +4,11 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+*main - Determines the last digit of a random number and print a message
+*
+*Return: Always 0 (Success
+*/)
 int main(void)
 {
 	int n, last_digit;
