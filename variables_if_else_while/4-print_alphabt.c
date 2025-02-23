@@ -9,7 +9,7 @@ int main(void)
 {
 char *alphabet = "abcdfghijklmnoprstuvwxyz\n";
 putchar(*alphabet);
-putchar(\n);
+putchar('\n');
 return (0);
 }
 
