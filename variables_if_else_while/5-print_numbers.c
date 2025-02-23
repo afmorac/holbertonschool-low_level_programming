@@ -3,7 +3,7 @@
 /**
  * main - Prints all single digits # of base 10
  *
- * Result: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
