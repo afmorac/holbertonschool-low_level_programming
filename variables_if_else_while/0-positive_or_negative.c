@@ -9,19 +9,19 @@
  */
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0)); /* Inicializa el generador de números aleatorios */
-    n = rand() - RAND_MAX / 2; /* Asigna un número aleatorio a n */
+	srand(time(0)); /* Inicializa el generador de números aleatorios */
+	n = rand() - RAND_MAX / 2; /* Asigna un número aleatorio a n */
 
     /* Evaluar si es positivo, negativo o cero */
-    if (n > 0)
+    	if (n > 0)
 	    printf("%d is positive\n", n);
-    else if (n == 0)
+	    else if (n == 0)
 	    printf("%d is zero\n", n);
-    else
+	    else
 	    printf("%d is negative\n", n);
 
-    return (0);
+	return (0);
 }
 
