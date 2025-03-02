@@ -11,8 +11,8 @@ while (str[len] != '\0')
 {
 len++;
 }
-n = ( len + 1 ) / 2;
-while ( str[n] != '\0')
+n = (len + 1) / 2;
+while (str[n] != '\0')
 {
 _putchar(str[n]);
 n++;
