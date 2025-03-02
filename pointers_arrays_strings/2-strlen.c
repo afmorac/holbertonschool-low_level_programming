@@ -6,7 +6,6 @@
  *
  * Return: Length of the string (excluding null terminator)
  */
- 
 int _strlen(char *s)
 {
 int count = 0;
