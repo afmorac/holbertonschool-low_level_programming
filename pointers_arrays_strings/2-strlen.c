@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * _strlen - Returns the length of a string
+ * @s: Pointer to the string to measure
  *
- * Return: Always 0.
+ * Return: Length of the string (excluding null terminator)
  */
-
+ 
 int _strlen(char *s)
 {
 int count = 0;
