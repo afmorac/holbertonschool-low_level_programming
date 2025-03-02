@@ -7,7 +7,7 @@
 void puts2(char *str)
 {
 int i = 0;
-while (str[i] != '\0')
+while (str[i] != '\0' && str[i] >= 32 && str[i] <= 126)
 {
 _putchar(str[i]);
 i = i + 2;
