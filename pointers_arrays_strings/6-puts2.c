@@ -7,14 +7,11 @@
 void puts2(char *str)
 {
 int i = 0;
-while (str[i] != '\0')
+while (str[i] != '\0' && str[i + 1] != '\0') // Evita que i+2 pase el límite
 {
 _putchar(str[i]);
-putchar('(');
-_putchar('0' + (i / 10));
-_putchar('0' + (i % 10));
-_putchar(')');
 i += 2;
 }
 _putchar('\n');
 }
+
