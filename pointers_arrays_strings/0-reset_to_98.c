@@ -15,7 +15,7 @@ int main(void)
 int n = 402;
 printf("before n: %d\n", n);
 reset_to_98(&n);
-printf("after n : %d\n"), n;
+printf("after n : %d\n", n);
 
 return (0);
 }
