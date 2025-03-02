@@ -10,6 +10,10 @@ int i = 0;
 while (str[i] != '\0')
 {
 _putchar(str[i]);
+putchar('(');
+_putchar('0' + (i / 10));
+_putchar('0' + (i % 10));
+_putchar(')');
 i += 2;
 }
 _putchar('\n');
