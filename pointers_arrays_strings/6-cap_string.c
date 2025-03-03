@@ -10,7 +10,6 @@ char *cap_string(char *str)
 {
 int i = 0;
 int capitalize_next = 1;
-char separators[] = "\t\n,;.!?\"(){}-";
 while (str[i] != '\0')
 {
 if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
