@@ -20,6 +20,14 @@ str[i] == '}')
 {
 capitalize_next = 1;
 }
+else if (str[i] == '-')
+{
+capitalize_next = 0;
+}
+else if (str[i] >= '0' && str[i] <= '9')
+{
+capitalize_next = 0:	
+}
 else if (capitalize_next == 1 && str[i] >= 'a' && str[i] <= 'z')
 {
 str[i] = str[i] - 32;
