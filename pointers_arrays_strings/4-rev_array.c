@@ -5,7 +5,7 @@
  * @a: The array of integers
  * @n: The number of elements in the array
  */
-void reverse_array(int *a, int *n)
+void reverse_array(int *a, int n)
 {
 int i = 0, j = n - 1;
 int temp;
