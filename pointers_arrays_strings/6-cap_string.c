@@ -28,7 +28,7 @@ if (capitalize_next == 1 && str[i] >= 'a' && str[i] <= 'z')
 str[i] = str[i] - 32;
 capitalize_next = 0;
 }
-else if (stri[i] >= 'A' && str[i] <= 'Z')
+else if (str[i] >= 'A' && str[i] <= 'Z')
 {
 capitalize_next = 0;
 }
