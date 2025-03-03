@@ -26,7 +26,7 @@ capitalize_next = 0;
 }
 else if (str[i] >= '0' && str[i] <= '9')
 {
-capitalize_next = 0:	
+capitalize_next = 0;	
 }
 else if (capitalize_next == 1 && str[i] >= 'a' && str[i] <= 'z')
 {
