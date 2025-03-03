@@ -13,9 +13,9 @@ char letters[] = "aAeEoOtTlL";
 char leet[] = "4433007711";
 for (i = 0; str[i] != '\0'; i++)
 {
-for (j = 0; str[j] != '\0'; j++)
+for (j = 0; letters[] != '\0'; j++)
 {
-if (str[j] = letters[j])
+if (str[j] == letters[j])
 {
 str[i] = leet[j];
 break;
