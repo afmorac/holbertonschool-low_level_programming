@@ -16,14 +16,14 @@ while (str[i] != '\0')
 int j = 0;
 while (separators[j] != '\0')
 {
-if (str[i] == separator[j])
+if (str[i] == separators[j])
 {
 capitalize_next = 1;
 break;
 }
 j++;
 }
-if (capitalize_next == 1 && str[i] >= 'a' && stri <= 'z')
+if (capitalize_next == 1 && str[i] >= 'a' && str[i] <= 'z')
 {
 str[i] = str[i] - 32;
 capitalize_next = 0;
