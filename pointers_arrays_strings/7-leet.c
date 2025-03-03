@@ -15,7 +15,7 @@ for (i = 0; str[i] != '\0'; i++)
 {
 for (j = 0; str[j] != '\0'; j++)
 {
-if (str[i] = letters[j])
+if (str[j] = letters[j])
 {
 str[i] = leet[j];
 break;
