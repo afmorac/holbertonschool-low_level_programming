@@ -13,15 +13,13 @@ int capitalize_next = 1;
 char separators[] = "\t\n,;.!?\"(){}-";
 while (str[i] != '\0')
 {
-int j = 0;
-while (separators[j] != '\0')
-{
-if (str[i] == separators[j])
+if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
+str[i] == ',' || str[i] == ';' || str[i] == ',' ||
+str[i] == '!' || str[i] == '?' || str[i] == '"' ||
+str[i] == '(' || str[i] == ')' || str[i] == '{' ||
+str[i] == '}' || str[i] == '-')
 {
 capitalize_next = 1;
-break;
-}
-j++;
 }
 else if (capitalize_next == 1 && str[i] >= 'a' && str[i] <= 'z')
 {
