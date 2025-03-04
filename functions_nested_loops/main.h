@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char c); // prototipo de _putchar
+int _putchar(char c);
 
 
 #endif /* MAIN_h */
