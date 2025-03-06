@@ -5,7 +5,6 @@
  *
  * Description: La función imprime todas las combinaciones de horas y minutos
  * desde 00:00 hasta 23:59, en formato HH:MM, utilizando `_putchar()`.
- * 
  * Return: No retorna nada (void)
  */
 void jack_bauer(void)
@@ -21,9 +20,9 @@ _putchar('0' + (hora % 10));
 _putchar(':');
 _putchar('0' + (min / 10));
 _putchar('0' + (hora % 10));
-_putchar('\n';
+_putchar('\n');
+}
 min++;
 }
 hora++;
-}
 }
