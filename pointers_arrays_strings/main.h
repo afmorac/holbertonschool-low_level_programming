@@ -11,4 +11,7 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 
+/* more porinters */
+char *_memset(char *s, char b, unsigned int n);
+
 #endif /* MAIN_H */
