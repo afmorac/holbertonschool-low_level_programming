@@ -14,5 +14,5 @@ if (*s == c)
 return (s);
 s++;
 }
-return (c == '\0') ? s : NULL;
+return ((c == '\0') ? s : NULL);
 }
