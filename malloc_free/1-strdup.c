@@ -5,7 +5,8 @@
  * _strdup - Duplica una cadena en un nuevo espacio de memoria.
  * @str: La cadena de entrada.
  *
- * Return: Puntero a la cadena duplicada o NULL si falla la asignación de memoria.
+ * Return: Puntero a la cadena duplicada o NULL si falla la
+ * asignación de memoria.
  */
 
 char *_strdup(char *str)
