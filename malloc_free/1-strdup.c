@@ -19,12 +19,12 @@ return (NULL);
 while (str[length] != '\0')
 length++;
 
-dup = ((length + 1) * sizeof(char));
+dup = malloc((length + 1) * sizeof(char));
 
 if (dup == NULL)
 return (NULL);
 
-for (i = 0, i <= length; i++)
+for (i = 0; i <= length; i++)
 dup[i] = str[i];
 return (dup);
 }
