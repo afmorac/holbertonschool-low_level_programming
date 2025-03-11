@@ -14,7 +14,7 @@ char *dup;
 int i, length = 0;
 
 if (str == NULL)
-return NULL();
+return (NULL);
 
 while (str[length] != '\0')
 length++;
