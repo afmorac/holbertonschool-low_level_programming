@@ -14,11 +14,11 @@ char *str_concat(char *s1, char *s2)
 char *new_str;
 int i,j, len1 = 0, len2 = 0;
 
-if (s1 != '\0')
+if (s1 != NULL)
 while (s1[len1] != '\0')
 len1++;
 
-if (s2 != '\0')
+if (s2 != NULL)
 while (s2[len2] != '\0')
 len2++;
 
