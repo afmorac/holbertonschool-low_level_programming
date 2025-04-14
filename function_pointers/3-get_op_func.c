@@ -1,56 +1,29 @@
 #include "3-calc.h"
+#include <stddef.h>
 
 /**
- * op_add - returns the sum of two integers
- * @a: first integer
- * @b: second integer
- * Return: result of a + b
+ * get_op_func - selects the correct function to perform the operation
+ * @s: operator passed as argument
+ * Return: pointer to the correct function, or NULL if not found
  */
-int op_add(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
-return (a + b);
+op_t ops[] = {
+{"+", op_add},
+{"-", op_sub},
+{"*", op_mul},
+{"/", op_div},
+{"%", op_mod},
+{NULL, NULL}
+};
+int i = 0;
+
+while (ops[i].op)
+{
+if (*(ops[i].op) == *s && s[1] == '\0')
+return (ops[i].f);
+i++;
+}
+return (NULL);
 }
 
-/**
- * op_sub - returns the difference of two integers
- * @a: first integer
- * @b: second integer
- * Return: result of a - b
- */
-int op_sub(int a, int b)
-{
-return (a - b);
-}
-
-/**
- * op_mul - returns the product of two integers
- * @a: first integer
- * @b: second integer
- * Return: result of a * b
- */
-int op_mul(int a, int b)
-{
-return (a * b);
-}
-
-/**
- * op_div - returns the result of dividing two integers
- * @a: numerator
- * @b: denominator
- * Return: result of a / b
- */
-int op_div(int a, int b)
-{
-return (a / b);
-}
-
-/**
- * op_mod - returns the remainder of division between two integers
- * @a: numerator
- * @b: denominator
- * Return: result of a % b
- */
-int op_mod(int a, int b)
-{
-return (a % b);
-}
